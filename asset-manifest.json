@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/Moon-Fashions-Client/static/css/main.feabcc01.css",
+    "main.js": "/Moon-Fashions-Client/static/js/main.3cbc86a4.js",
+    "static/media/p8.png": "/Moon-Fashions-Client/static/media/p8.dfaff884736ebb2f815c.png",
+    "static/media/p2.png": "/Moon-Fashions-Client/static/media/p2.1488ae17c76fb03645dd.png",
+    "static/media/c1.jpg": "/Moon-Fashions-Client/static/media/c1.22f3cfd4f6b13261bb1f.jpg",
+    "static/media/offer1.png": "/Moon-Fashions-Client/static/media/offer1.f00a3ef119711a43436e.png",
+    "static/media/c2 D.jpg": "/Moon-Fashions-Client/static/media/c2 D.38fda4f63d94c0e67d8a.jpg",
+    "static/media/c3.jpg": "/Moon-Fashions-Client/static/media/c3.11c9f7407f00fb18505d.jpg",
+    "static/media/p3.avif": "/Moon-Fashions-Client/static/media/p3.316a3c4e7e14b357c6ba.avif",
+    "static/media/p6.avif": "/Moon-Fashions-Client/static/media/p6.d776e77a9e47cfbee034.avif",
+    "static/media/women Sarees.webp": "/Moon-Fashions-Client/static/media/women Sarees.fc27e4e4e3a705dac078.webp",
+    "static/media/men short.webp": "/Moon-Fashions-Client/static/media/men short.01e92d4ab3ea947d3b07.webp",
+    "static/media/kids dress.webp": "/Moon-Fashions-Client/static/media/kids dress.d0b5b3c944137b3f88a6.webp",
+    "static/media/women nekles.webp": "/Moon-Fashions-Client/static/media/women nekles.dc2b7a1d4f3d84f60c80.webp",
+    "static/media/kids stationery.webp": "/Moon-Fashions-Client/static/media/kids stationery.90436d9b0fd566e51068.webp",
+    "static/media/p9.avif": "/Moon-Fashions-Client/static/media/p9.62e6740f4827a610f03e.avif",
+    "static/media/men watch.webp": "/Moon-Fashions-Client/static/media/men watch.5adead094b56f3e9743c.webp",
+    "static/media/kids footwear.webp": "/Moon-Fashions-Client/static/media/kids footwear.32353a45cdb9c4f2482f.webp",
+    "static/media/p5.avif": "/Moon-Fashions-Client/static/media/p5.3b55ef48ec24950586bb.avif",
+    "static/media/kids toys.webp": "/Moon-Fashions-Client/static/media/kids toys.087df63ef55ea3c70a6b.webp",
+    "static/media/women footwear.webp": "/Moon-Fashions-Client/static/media/women footwear.b82512ae6398d57a00fd.webp",
+    "static/media/men bags.webp": "/Moon-Fashions-Client/static/media/men bags.bc67315cfe0a684df889.webp",
+    "static/media/p12.avif": "/Moon-Fashions-Client/static/media/p12.99340ffcb8a60ec8cdfc.avif",
+    "static/media/p1.webp": "/Moon-Fashions-Client/static/media/p1.a6e63f61ac434d346696.webp",
+    "static/media/women bags.webp": "/Moon-Fashions-Client/static/media/women bags.732109c56b055d2a996d.webp",
+    "static/media/p4.avif": "/Moon-Fashions-Client/static/media/p4.1dd2b2b30c5af283b6c6.avif",
+    "static/media/p11.avif": "/Moon-Fashions-Client/static/media/p11.186c3044ac19cd81da48.avif",
+    "static/media/men fant.webp": "/Moon-Fashions-Client/static/media/men fant.55286ced87d9a3d729b0.webp",
+    "static/media/p7.avif": "/Moon-Fashions-Client/static/media/p7.08ec824ecce9483a1dc6.avif",
+    "static/media/p10.avif": "/Moon-Fashions-Client/static/media/p10.566083ad4e2bdceb5aec.avif",
+    "index.html": "/Moon-Fashions-Client/index.html",
+    "main.feabcc01.css.map": "/Moon-Fashions-Client/static/css/main.feabcc01.css.map",
+    "main.3cbc86a4.js.map": "/Moon-Fashions-Client/static/js/main.3cbc86a4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.feabcc01.css",
+    "static/js/main.3cbc86a4.js"
+  ]
+}
