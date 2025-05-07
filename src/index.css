@@ -1,0 +1,159 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.sticky-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background-color: #fff;
+}
+
+.relative-navbar {
+  position: relative;
+}
+
+.head-search {
+    display: block;
+}
+
+.tab-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 24px;
+}
+
+
+.custom-card {
+    transition: text 0.3s ease-in-out;
+    border: none;
+    border-radius: 12px;
+  }
+  
+  .shadow-hover:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+  }
+  
+  .card img {
+    object-fit: cover;
+    height: 160px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  .clickable-card {
+    cursor: pointer;
+  }
+
+
+  .range-slider-wrapper {
+    position: relative;
+    height: 36px;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  
+  .range-slider {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background: transparent;
+    position: absolute;
+    pointer-events: none;
+  }
+  
+  .range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 30px;
+    width: 10px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+    pointer-events: all;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .range-slider::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+    pointer-events: all;
+    z-index: 3;
+  }
+  
+  /* Track */
+  .slider-track {
+    position: absolute;
+    height: 5px;
+    background: #007bff;
+    top: 50%;
+    /* width: auto; */
+    transform: translateY(-50%);
+    z-index: 2;
+    border-radius: 5px;
+  }
+
+
+  
+/* Hero Banner Background */
+.become-seller .seller-hero {
+  background-image: url('https://static-assets-web.flixcart.com/fk-sp-static/images/prelogin/banner/Desktop_sell.webp');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  color: black;
+  /* text-shadow: 1px 1px 2px #000; */
+}
+
+/* Step Number Circle Style */
+.become-seller .circle {
+  width: 40px;
+  height: 40px;
+  background-color: #6c63ff;
+  color: white;
+  line-height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* Card Styling for Consistency */
+.become-seller .card {
+  transition: transform 0.2s ease;
+}
+
+.become-seller .card:hover {
+  transform: translateY(-5px);
+}
+
+  
+
+
+  /* login */
+  .res-width {
+    width: 70%;
+  }
+  .bg-pink {
+    background-color: #f8f9fa;
+  }
+  .bg-tp {
+    /* filter: blur(); */
+    background: rgba(10, 10, 10, 0.404);
+    background-color: #007bff;
+    background: transparent;
+    backdrop-filter: blur(10px); /* 👈 this gives the glass effect */
+  -webkit-backdrop-filter: blur(10px); /* for Safari support */
+  }
+
+
+  .res-w {
+    width: 100%;
+  }

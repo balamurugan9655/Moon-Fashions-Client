@@ -1,0 +1,10 @@
+/* AdminLayout.css */
+.admin-layout .sidebar {
+    top: 56px; /* Adjust based on header height */
+  }
+  .admin-layout .fixed-top {
+    z-index: 1030;
+  }
+
+
+  

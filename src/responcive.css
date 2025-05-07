@@ -1,0 +1,27 @@
+@media screen and (max-width:878px) {
+    /* .head-search {
+        display: none;
+    } */
+    .res-width {
+        width: 100%;
+    }
+   
+}
+
+@media screen and (max-width:515px) {
+    .tab-view {
+        justify-content: center;
+        padding: 3px 5px;
+    }
+    .ph-vw {
+        display: none;
+    }
+}
+@media screen and (max-width:424px) {
+    .f-col {
+        flex-direction: column;
+    }
+    .sm-p {
+        padding: 8px 12px;
+    }
+}
