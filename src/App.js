@@ -31,7 +31,7 @@ function App() {
   return (
         <UserProvider>
           <ToastContainer position="top-right" autoClose={3000} />
-          <Router>
+          <Router basename="Moon-Fashions-Client">
             <Routes>
               <Route path="/" element={<Home />} />
                     {/* Other Routes */}
