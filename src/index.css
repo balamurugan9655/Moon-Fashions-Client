@@ -157,3 +157,9 @@
   .res-w {
     width: 100%;
   }
+
+.card-p:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+}

@@ -155,7 +155,7 @@ const ProductListPage = () => {
             ) : (
               filteredProducts.map((product,index) => (
                 <Col key={index} xs={12} sm={6} md={6} lg={3} className="mb-2">
-                  <Card className="h-100 shadow-sm position-relative">
+                  <Card className="h-100 shadow-sm position-relative card-p">
                     <Badge
                       bg="light"
                       className="position-absolute top-0 end-0 m-2"
@@ -169,11 +169,11 @@ const ProductListPage = () => {
                       src={product.image}
                       style={{ height: '180px', objectFit: 'contain' }}
                     />
-                    <Card.Body className="p-2">
+                    <Card.Body className="p-2 mt-1">
                       {product.sponsored && (
                         <Badge bg="light" text="primary" className="mb-1">Sponsored</Badge>
                       )}
-                      <Card.Title  style={{ fontSize: '0.95rem' }}> <span className='fw-bold'> {product.brand} </span> <span> {product.name} </span></Card.Title>
+                      <Card.Title className='' style={{ fontSize: '0.95rem' }}> <span className='fw-bold'> {product.brand} </span> <span> {product.name} </span></Card.Title>
                       <Card.Text className="mb-1">
                         { product.rating<5 ? (<Badge bg="success" className="me-1">{product.rating} ★ </Badge>) : (<Badge bg="success" className="me-1">{product.rating}.0 ★ </Badge>) }
                         <small className="text-muted">({product.reviews})</small>
@@ -185,7 +185,7 @@ const ProductListPage = () => {
                         </span>
                         <span className="text-success ms-1">{product.discount}% off</span>
                       </Card.Text>
-                      <div className=' card-text mb-1'>
+                      <div className='card-text mb-1'>
                       {product.freeDelivery && <div className="text-success small">Free delivery</div>}
                       {product.stockStatus === "Out of Stock" && <Badge bg="danger" className="me-1">Out of Stock</Badge>}
                       </div>

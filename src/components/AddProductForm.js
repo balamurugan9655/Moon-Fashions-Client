@@ -209,7 +209,7 @@ const AddProductForm = () => {
                     <Form.Group className="mb-3" controlId="stockStatus">
                       <Form.Label>Stock Status</Form.Label>
                       <Form.Select name="stockStatus" value={productData.stockStatus} onChange={handleChange} required>
-                        {/* <option disabled value="">Select Stock Status</option> */}
+                        <option disabled value="">Select Stock Status</option>
                         <option value="In Stock">In Stock</option>
                         <option value="Out of Stock">Out of Stock</option>
                       </Form.Select>

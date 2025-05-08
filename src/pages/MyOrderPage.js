@@ -86,12 +86,12 @@ const MyOrderPage = () => {
 
                     {/* Product Info */}
                     <Col xs={12} md={4}>
-                      <h5 className="fw-bold text-center text-md-start">
-                        <strong className="text-muted">
+                      <h6 className="fw-bold text-center text-md-start">
+                        <strong className="text-muted fw-bold">
                           {ord.items[0].productId.brand}
                         </strong>{" "}
                         {ord.items[0].productId.name}
-                      </h5>
+                      </h6>
                       {/* <p>{ord.items[0].productId.description}</p> */}
                     </Col>
 

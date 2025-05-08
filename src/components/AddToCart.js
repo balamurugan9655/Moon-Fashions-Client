@@ -59,7 +59,7 @@ const CartPage = () => {
 
 
   return (
-    <Container fluid>
+    <Container fluid className="p-0">
       <NavBar />
       <Container fluid className="mt-4">
         <h2>Your Cart</h2>
