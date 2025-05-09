@@ -72,7 +72,7 @@ const UserList = () => {
           <Form className="d-flex gap-2 mb-3 flex-column flex-md-row">
             <Form.Control
               type="text"
-              placeholder="Search by user, product or status"
+              placeholder="Search by Name, Email, Phone Number or Account Type"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />

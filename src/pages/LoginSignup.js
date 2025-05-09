@@ -3,6 +3,7 @@ import { Container, Form, Button, Tab, Tabs, Card, Row, Col } from 'react-bootst
 import axios from '../utils/axios';
 import { useUser } from "../components/UserContext";
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const LoginSignup = () => {
   const [key, setKey] = useState('login');
@@ -32,7 +33,7 @@ const LoginSignup = () => {
       localStorage.setItem('name', res.data.name);
 
       login({ userType: res.data.userType, udata: res.data.udata });
-      alert("Login Successfully");
+      toast.success("Login Successfully");
       navigate("/");
     } catch (err) {
       alert(err.response?.data?.msg || "Something went wrong");
@@ -51,7 +52,7 @@ const LoginSignup = () => {
 
     try {
       const res = await axios.post('/users/signup', signupData);
-      alert(res.data.msg);
+      toast.success(res.data.msg);
       localStorage.setItem('userType', JSON.stringify("user"));
       localStorage.setItem('udata', JSON.stringify(res.data.udata));
 
@@ -76,7 +77,7 @@ const LoginSignup = () => {
                     type="email"
                     placeholder="example@gmail.com"
                     value={loginData.email}
-                    pattern="[a-z0-9._%+-]+@gmail\.com$"
+                    pattern="[a-z0-9._%+-]+@gmail\\.com$"
                     onChange={(e) => setLoginData({ ...loginData, email: e.target.value })}
                   />
                   <Form.Control.Feedback type="invalid">Valid email required</Form.Control.Feedback>
@@ -138,7 +139,7 @@ const LoginSignup = () => {
                     type="email"
                     placeholder="example@gmail.com"
                     value={signupData.email}
-                    pattern="[a-z0-9._%+-]+@gmail\.com$"
+                    pattern="[a-z0-9._%+-]+@gmail\\.com$"
                     onChange={(e) => setSignupData({ ...signupData, email: e.target.value })}
                   />
                   <Form.Control.Feedback type="invalid">Enter valid email</Form.Control.Feedback>

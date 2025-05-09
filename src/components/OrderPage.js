@@ -204,10 +204,10 @@ const OrderPage = () => {
                   <Form>
                     <Row>
                       <Col md={6}><Form.Group className="mb-2"><Form.Label>Name</Form.Label><Form.Control value={newAddress.name} onChange={(e) => setNewAddress({ ...newAddress, name: e.target.value })} /></Form.Group></Col>
-                      <Col md={6}><Form.Group className="mb-2"><Form.Label>Phone</Form.Label><Form.Control value={newAddress.phone} onChange={(e) => setNewAddress({ ...newAddress, phone: e.target.value })} /></Form.Group></Col>
+                      <Col md={6}><Form.Group className="mb-2"><Form.Label>Phone</Form.Label><Form.Control value={newAddress.phone} pattern="^[6-9]\d{9}$" maxLength={10} onChange={(e) => setNewAddress({ ...newAddress, phone: e.target.value })} /></Form.Group></Col>
                     </Row>
                     <Form.Group className="mb-2"><Form.Label>Door No & Street</Form.Label><Form.Control value={newAddress.doorStreet} onChange={(e) => setNewAddress({ ...newAddress, doorStreet: e.target.value })} /></Form.Group>
-                    <Form.Group className="mb-2"><Form.Label>Pincode</Form.Label><Form.Control value={newAddress.pincode} onChange={handlePincodeChange} /></Form.Group>
+                    <Form.Group className="mb-2"><Form.Label>Pincode</Form.Label><Form.Control value={newAddress.pincode} maxLength={6} onChange={handlePincodeChange} /></Form.Group>
                     <Row>
                       <Col md={4}><Form.Group className="mb-2"><Form.Label>District</Form.Label><Form.Control value={newAddress.district} readOnly /></Form.Group></Col>
                       <Col md={4}><Form.Group className="mb-2"><Form.Label>State</Form.Label><Form.Control value={newAddress.state} readOnly /></Form.Group></Col>
@@ -265,8 +265,8 @@ const OrderPage = () => {
           <Card className="mb-2">
             <Card.Header as="h5">PAYMENT METHOD</Card.Header>
             <Card.Body>
-              <Form.Check type="radio" label="Cash On Delivery (COD)" name="paymentMethod" value="COD" checked={paymentMethod === "COD"} onChange={(e) => setPaymentMethod(e.target.value)} />
-              <Form.Check type="radio" label="Online Payment" name="paymentMethod" value="OnlinePayment" checked={paymentMethod === "OnlinePayment"} onChange={(e) => setPaymentMethod(e.target.value)} />
+              <Form.Check id='1' type="radio" label="Cash On Delivery (COD)" name="paymentMethod" value="COD" checked={paymentMethod === "COD"} onChange={(e) => setPaymentMethod(e.target.value)} />
+              <Form.Check id='2' type="radio" label="Online Payment" name="paymentMethod" value="OnlinePayment" checked={paymentMethod === "OnlinePayment"} onChange={(e) => setPaymentMethod(e.target.value)} />
             </Card.Body>
           </Card>
 

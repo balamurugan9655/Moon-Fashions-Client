@@ -63,7 +63,7 @@ function MyCarousel() {
         <Carousel.Caption className="">
           <h1>Join as a Supplier</h1>
           <p className='d-none d-md-block d-lg-block'>Collaborate with us and grow your business by reaching thousands of fashion lovers.</p>
-          <button className="btn btn-warning">Become a Partner</button>
+          <button className="btn btn-warning" onClick={() => navigate('/seller')}>Become a Partner</button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

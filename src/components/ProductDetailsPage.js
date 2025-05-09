@@ -60,13 +60,19 @@ const ProductDetailsPage = () => {
      const { userInfo } = useUser();
 
     const handleAddToCart = async (productId) => {
-      try {     
-        const userId = await userInfo.udata._id;
-        const res = await axios.post('/cart/addtocart', { userId, productId });
-        alert(res.data.message);
-      } catch (err) {
-        console.error("Error adding to cart:", err);
-        alert("Something went wrong");
+      if (userInfo) {
+        try {     
+          const userId = await userInfo.udata._id;
+          const res = await axios.post('/cart/addtocart', { userId, productId });
+          alert(res.data.message);
+        } catch (err) {
+          console.error("Error adding to cart:", err);
+          alert("Something went wrong");
+        }
+      }
+      else {
+        alert('if you buy a product please login')
+        navigate('/loginpage')
       }
     }
 
