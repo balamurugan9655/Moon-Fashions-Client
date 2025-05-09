@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Moon-Fashions-Client/static/css/main.f0b57c7b.css",
-    "main.js": "/Moon-Fashions-Client/static/js/main.7814c0c6.js",
+    "main.js": "/Moon-Fashions-Client/static/js/main.b8d8d6e7.js",
     "static/media/p8.png": "/Moon-Fashions-Client/static/media/p8.dfaff884736ebb2f815c.png",
     "static/media/p2.png": "/Moon-Fashions-Client/static/media/p2.1488ae17c76fb03645dd.png",
     "static/media/c1.jpg": "/Moon-Fashions-Client/static/media/c1.22f3cfd4f6b13261bb1f.jpg",
@@ -32,10 +32,10 @@
     "static/media/p10.avif": "/Moon-Fashions-Client/static/media/p10.566083ad4e2bdceb5aec.avif",
     "index.html": "/Moon-Fashions-Client/index.html",
     "main.f0b57c7b.css.map": "/Moon-Fashions-Client/static/css/main.f0b57c7b.css.map",
-    "main.7814c0c6.js.map": "/Moon-Fashions-Client/static/js/main.7814c0c6.js.map"
+    "main.b8d8d6e7.js.map": "/Moon-Fashions-Client/static/js/main.b8d8d6e7.js.map"
   },
   "entrypoints": [
     "static/css/main.f0b57c7b.css",
-    "static/js/main.7814c0c6.js"
+    "static/js/main.b8d8d6e7.js"
   ]
 }
