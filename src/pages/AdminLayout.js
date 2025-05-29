@@ -100,7 +100,7 @@ const AdminLayout = () => {
               <h1>Loading Data...</h1>
           ): (
             location.pathname === "/admin" && loading ? (
-              <h1 className="text-center">Welcome Back {userName} 👋</h1>
+              <h1 className="text-center">Welcome Back {userName.toUpperCase()} 👋</h1>
             ) : (
               <Outlet />
             )

@@ -21,6 +21,7 @@ const ProductListPage = () => {
   const [selectedRatings, setSelectedRatings] = useState([]);
 
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(false);
   const { userInfo } = useUser();
 
   const navigate = useNavigate();
@@ -31,8 +32,10 @@ const ProductListPage = () => {
         const response = await axios.get('/products');
         const item = response.data;
         setProducts(item);  
+        setLoading(true)
       } catch (err) {
         console.log(err)
+        setLoading(false)
       }
     }
     cardData();
@@ -150,7 +153,10 @@ const ProductListPage = () => {
 
         <Col md={9}>
           <Row>
-            {filteredProducts.length === 0 ? (
+            {!loading ? (
+              <p>Data Loading ... </p>
+            ) : (
+              filteredProducts.length === 0 ? (
               <p className="text-center">No products found with selected filters.</p>
             ) : (
               filteredProducts.map((product,index) => (
@@ -199,6 +205,7 @@ const ProductListPage = () => {
                   </Card>
                 </Col>
               ))
+            )
             )}
           </Row>
         </Col>
